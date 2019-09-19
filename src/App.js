@@ -1,33 +1,40 @@
 import React from 'react';
 import './App.css';
-import faker from 'faker';
+//import Comment from "./comment";
+//import ApprovalCard from "./approvalCard";
+//import faker from 'faker';
+import DecideSport from "./decideSport";
 
-function App() {
+class App extends React.Component{
 
-    return (
-        <div className="ui comments">
-            <div className="comment">
-                <a className="avatar" href='/'>
-                    <img alt={""} src={faker.image.avatar()}/>
-                </a>
-                <div className="content">
-                    <a href='/' className="author">Tom Lukic</a>
-                    <div className="text">
-                        This will be great for business reports. I will definitely download this.
-                    </div>
-                    <div className="actions">
-                        <a href='/' className="reply">Reply</a>
-                        <a href='/' className="save">Save</a>
-                        <a href='/' className="hide">Hide</a>
-                        <a href='/'>
-                            <i className="expand icon"></i>
-                            Full-screen
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    );
+    render() {
+        return(
+            <DecideSport>
+
+            </DecideSport>
+        )
+    }
+
+    //return (
+        // <div className="ui comments" style={{paddingTop: '10px', paddingLeft: '10px'}}>
+        //     <ApprovalCard>
+        //         <Comment name={'Serhat Sait'}
+        //                  text={'Lorem ipsum dolor sit amet'}
+        //                  avatar={faker.image.avatar()}
+        //         />
+        //     </ApprovalCard>
+        //
+        //     <ApprovalCard>
+        //         <Comment name={'Ali Veli'}
+        //                  text={'consecteur deliveris'}
+        //                  avatar={faker.image.avatar()}
+        //         />
+        //     </ApprovalCard>
+        //     <ApprovalCard>
+        //         Hi, ReactJS !!
+        //     </ApprovalCard>
+        // </div>
+    //);
 }
 
 export default App;
